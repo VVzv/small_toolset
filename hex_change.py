@@ -10,7 +10,7 @@ try:
     if '0x' in cmd:
         cmd = cmd.split('0x')[-1]
         hex_de = binascii.a2b_hex(cmd)
-        print("\033[36m'%s'hex解码为:'%s'\033[0m" %(cmd, hex_de.decode('utf-8')))
+        print("\033[36m'0x%s'hex解码为:'%s'\033[0m" %(cmd, hex_de.decode('utf-8')))
     else:
         hex_en = b'0x' + binascii.b2a_hex(bytes(cmd,'utf-8'))
         print("\033[36m'%s'hex编码为:'%s'\033[0m" %(cmd, hex_en.decode('utf-8')))
