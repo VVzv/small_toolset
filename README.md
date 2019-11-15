@@ -1,8 +1,7 @@
 # small_toolset
 small toolset to use
 #### hex_change.py:
-用于十六进制与字符之间的相互转换；
-使用方法：
+用于十六进制与字符之间的相互转换,使用方法：
 ```
 字母或者字符转16进制：
 python3 hex_change.py abc
