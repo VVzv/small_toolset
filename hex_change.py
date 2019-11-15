@@ -8,7 +8,7 @@ import binascii
 try:
     cmd = sys.argv[1]
     if '0x' in cmd:
-        cmd = cmd.strip('0x')
+        cmd = cmd.split('0x')[-1]
         hex_de = binascii.a2b_hex(cmd)
         print("\033[36m'%s'hex解码为:'%s'\033[0m" %(cmd, hex_de.decode('utf-8')))
     else:
